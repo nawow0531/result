@@ -4,17 +4,35 @@
     <meta charset="utf-8">
     <title>Cats vs Dogs -- Result</title>
     <base href="/index.html">
-    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="docker-compose, docker, stack">
     <meta name="author" content="Docker">
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      #background-stats-1 {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsl3ifMWDKKFEmmcOtTxsZTzoyidZ56gVj_A&s');
+        background-size: cover;
+      }
+      
+      #background-stats-2 {
+        background-image: url('https://sitem.ssgcdn.com/13/03/75/item/1000438750313_i1_750.jpg');
+        background-size: cover;
+      }
+      
+      #background-stats-1, #background-stats-2 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+    </style>
   </head>
-  <body ng-controller="statsCtrl" >
+  <body ng-controller="statsCtrl">
      <div id="background-stats">
-       <div id="background-stats-1">
-       </div><!--
-      --><div id="background-stats-2">
-      </div>
+       <div id="background-stats-1"></div>
+       <div id="background-stats-2"></div>
     </div>
     <div id="content-container">
       <div id="content-container-center">
@@ -24,20 +42,4 @@
             <div class="stat">{{aPercent | number:1}}%</div>
           </div>
           <div class="divider"></div>
-          <div class="choice dogs">
-            <div class="label">Dogs</div>
-            <div class="stat">{{bPercent | number:1}}%</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="result">
-      <span ng-if="total == 0">No votes yet</span>
-      <span ng-if="total == 1">{{total}} vote</span>
-      <span ng-if="total >= 2">{{total}} votes</span>
-    </div>
-    <script src="socket.io.js"></script>
-    <script src="angular.min.js"></script>
-    <script src="app.js"></script>
-  </body>
-</html>
+          <div
