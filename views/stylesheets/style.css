@@ -88,20 +88,15 @@ body{
   text-transform: uppercase;
 }
 
-#choice .choice.dogs {
-  background-image: url('static/images/image01.png'); /* 강아지 이미지 경로 입력 */
-  background-size: cover; /* 이미지가 버튼에 가득 차도록 설정 */
-  color: transparent; /* 텍스트를 투명하게 만듭니다. */
+#choice .choice.dogs{
+  color: #00cbca;
   float: right;
 }
 
-#choice .choice.cats {
-  background-image: url('static/images/image02.png'); /* 고양이 이미지 경로 입력 */
-  background-size: cover; /* 이미지가 버튼에 가득 차도록 설정 */
-  color: transparent; /* 텍스트를 투명하게 만듭니다. */
+#choice .choice.cats{
+  color: #2196f3;
   float: left;
 }
-
 #background-stats{
   z-index:1;
   height:100%;
