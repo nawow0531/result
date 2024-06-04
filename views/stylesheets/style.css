@@ -126,11 +126,11 @@ body {
 }
 
 #background-stats-1 img {
-  top: calc({{aPercent}} * 80%);
-  left: calc({{aPercent}} * 80%);
+  top: 20px;
+  left: 20px;
 }
 
 #background-stats-2 img {
-  top: calc({{bPercent}} * 80%);
-  left: calc({{bPercent}} * 80%);
+  top: 20px;
+  left: 20px;
 }
