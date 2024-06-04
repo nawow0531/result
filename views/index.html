@@ -74,6 +74,7 @@
       width: 450px;
       height: 200px;
       position: relative;
+      overflow: hidden; /* 이미지가 넘칠 경우를 대비하여 추가 */
     }
     #choice a{
       text-decoration:none;
@@ -122,8 +123,7 @@
       max-width: 80px;
       height: auto;
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 10px; /* 수정: 텍스트와 이미지 사이 간격 조정 */
       left: 10px;
     }
   </style>
@@ -137,7 +137,7 @@
     <div id="content-container-center">
       <div id="choice">
         <div class="choice cats">
-          <img src="https://ncondesign.com/wp-content/uploads/2023/05/1.png" alt="Cat Image">
+          <img src="https://png.pngtree.com/png-clipart/20230512/original/pngtree-beauty-cat-isolated-on-white-background-png-image_9158439.png" alt="Cat Image">
           <div class="label">Cats</div>
         </div>
         <div class="divider"></div>
