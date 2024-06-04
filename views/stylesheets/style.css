@@ -30,13 +30,11 @@ body {
 #background-stats-1 {
   background-color: #2196f3;
   position: relative;
-  overflow: hidden;
 }
 
 #background-stats-2 {
   background-color: #00cbca;
   position: relative;
-  overflow: hidden;
 }
 
 #content-container {
@@ -116,13 +114,11 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
 }
 
 #background-stats img {
+  position: absolute;
   width: 150px;
-  height: auto;
+  top: 20px;
+  left: 20px;
 }
