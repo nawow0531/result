@@ -28,6 +28,12 @@
       width: 50%;
       height: 100%;
     }
+    #background-stats-1 {
+      background-color: #2196f3; /* 수정: dogs의 배경색 */
+    }
+    #background-stats-2 {
+      background-color: #00cbca; /* 수정: cats의 배경색 */
+    }
     #content-container {
       position: relative;
       margin: 0 auto;
@@ -43,8 +49,7 @@
     }
     #choice {
       line-height: 1.3em;
-      background: #fff;
-      box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+      background: none; /* 수정: 텍스트 상자의 배경색 제거 */
       vertical-align: middle;
       font-size: 40px;
       font-weight: 600;
@@ -80,6 +85,7 @@
       position: absolute;
       top: -60px; /* 수정: 이미지를 텍스트 상자 위로 이동 */
       left: 10px;
+      z-index: 1; /* 수정: 이미지가 텍스트 위에 보이도록 z-index 추가 */
     }
     #result {
       position: absolute;
@@ -89,6 +95,7 @@
       opacity: 0.5;
       font-size: 45px;
       font-weight: 600;
+      z-index: 2; /* 수정: 텍스트가 이미지 위에 보이도록 z-index 추가 */
     }
   </style>
 </head>
