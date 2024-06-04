@@ -25,13 +25,11 @@ body{
 }
 
 #background-stats-1{
-  background-image: url('result/views/images/image01.png');
-  background-size: cover;
+  background-color: #2196f3;
 }
 
 #background-stats-2{
-  background-image: url('result/views/images/image02.png');
-  background-size: cover;
+  background-color: #00cbca;
 }
 
 #content-container{
