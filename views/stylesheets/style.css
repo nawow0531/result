@@ -31,35 +31,18 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
-}
-
-#background-stats-1 {
-  background-color: #2196f3;
-}
-
-#background-stats-2 {
-  background-color: #00cbca;
-}
-
-#background-stats-1::after, #background-stats-2::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 30%;
-  height: 30%;
-  transform: translate(-50%, -50%);
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#background-stats-1::after {
+#background-stats-1 {
+  background-color: #2196f3;
   background-image: url('https://search.pstatic.net/sunny/?src=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Fkitten-month_191971-3332.jpg&type=sc960_832');
 }
 
-#background-stats-2::after {
+#background-stats-2 {
+  background-color: #00cbca;
   background-image: url('https://sitem.ssgcdn.com/13/03/75/item/1000438750313_i1_750.jpg');
 }
 
@@ -99,4 +82,23 @@ body {
   font-size: 40px;
   font-weight: 600;
   width: 450px;
-  height:
+  height: 200px;
+}
+
+#choice a {
+  text-decoration: none;
+}
+
+#choice a:hover,
+#choice a:focus {
+  outline: 0;
+  text-decoration: underline;
+}
+
+#choice .choice {
+  width: 49%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+  padding-left: 50px
