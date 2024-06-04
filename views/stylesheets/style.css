@@ -28,21 +28,16 @@ body {
 
 #background-stats-1 {
   background-image: url('https://search.pstatic.net/sunny/?src=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Fkitten-month_191971-3332.jpg&type=sc960_832');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #background-stats-2 {
   background-image: url('https://sitem.ssgcdn.com/13/03/75/item/1000438750313_i1_750.jpg');
-  background-size: cover;
-}
-
-#background-stats-1, #background-stats-2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #content-container {
@@ -115,4 +110,19 @@ body {
 #choice .choice.cats {
   color: #2196f3;
   float: left;
+}
+
+#background-stats {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#background-stats div {
+  transition: width 400ms ease-in-out;
+  display: inline-block;
+  margin-bottom: -4px;
+  width: 50%;
+  height: 100%;
 }
