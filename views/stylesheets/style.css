@@ -29,12 +29,10 @@ body {
 
 #background-stats-1 {
   background-color: #2196f3;
-  position: relative;
 }
 
 #background-stats-2 {
   background-color: #00cbca;
-  position: relative;
 }
 
 #content-container {
@@ -74,6 +72,8 @@ body {
   font-weight: 600;
   width: 450px;
   height: 200px;
+  position: relative;
+  overflow: hidden;
 }
 
 #choice a {
@@ -114,6 +114,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
+  overflow: hidden;
 }
 
 #background-stats img {
@@ -121,4 +122,15 @@ body {
   width: 150px;
   top: 20px;
   left: 20px;
+  transition: top 0.5s ease, left 0.5s ease;
+}
+
+#background-stats-1 img {
+  top: calc({{aPercent}} * 80%);
+  left: calc({{aPercent}} * 80%);
+}
+
+#background-stats-2 img {
+  top: calc({{bPercent}} * 80%);
+  left: calc({{bPercent}} * 80%);
 }
